@@ -18,12 +18,7 @@ stages
 stage('Build') 
 {
 steps{
-  echo "node {
-     stage("Build")
-  {
-     echo "Build Success"
-  }
-  "
+     echo "Build the Project"
 }
 }
 stage('Test') 
