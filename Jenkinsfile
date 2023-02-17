@@ -1,12 +1,37 @@
+// pipeline{
+// agent any
+// stages{
+//  stage("Build")
+//  {
+//    echo "Build"
+// }
+// stage("Deploy")
+//  {
+//    echo "Deploy"
+// }
+// }
+
 pipeline{
 agent any
-stages{
- stage("Build")
- {
-   echo "Build"
+stages 
+{
+stage('Build') 
+{
+steps{
+echo "Building the Project.........."
 }
-stage("Deploy")
- {
-   echo "Deploy"
+}
+stage('Test') 
+{
+steps{
+echo "Testing the Project.........."
+}
+}
+stage('Deploy') 
+{
+steps{
+echo "Deploying the Project.........."
+}
+}
 }
 }
