@@ -1,14 +1,17 @@
-// pipeline{
-// agent any
-// stages{
-//  stage("Build")
-//  {
-//    echo "Build"
-// }
-// stage("Deploy")
-//  {
-//    echo "Deploy"
-// }
+// node
+// {
+//     stage("build")
+//     {
+//         echo "Build Success"
+//     }
+//     stage("test")
+//     {
+//         echo "tested Success"
+//     }
+//     stage("Deploy")
+//     {
+//         echo "Deploy Success"
+//     }
 // }
 
 pipeline{
